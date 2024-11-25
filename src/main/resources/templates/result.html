@@ -325,7 +325,7 @@
  // _______checkbox_______________________________________
 
                 $('#editForm').submit(function (event) {
-
+// _________массив для ролей__________________________________
                     var arrayRole=[];
 
                     $('input:checkbox:checked').each(function(){
@@ -388,7 +388,7 @@
 
                 });
 
-
+            
             fetch('/admin/user', {
                 method: 'GET',
                 headers: {
@@ -402,17 +402,6 @@
                     console.log("GET запрос");
                     console.log(json);
                 });
-
-
-        // $(this).closest('tr').find('.user_firstname').html(to);
-        //     $(this).closest('tr').find('.user_lastname').html(lastname);
-        //     $(this).closest('tr').find('.user_age').html(age);
-        //     $(this).closest('tr').find('.user_email').html(email);
-        //     $(this).closest('tr').find('.user_roles').html(arrayRole);
-
-            // _________________________________________________
-
-
 
         })
     })
